@@ -1,13 +1,13 @@
 <template>
-  <div class="comp-i">
-      CompI
+  <div class="common-b">
+      CommonCompB
   </div>
 </template>
 
 <style scoped>
-.comp-i{
+.common-b{
     height: 100px;
     width: 100%;
-    background: yellow;
+    background: rebeccapurple;
 }
 </style>

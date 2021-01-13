@@ -1,9 +1,11 @@
 <template>
   <div style="height: 100%">
     <div class="index-d3 switch">
-      <div class="d3-more" style="display: block">
+      <div class="d3-more" style="display: block;padding-top: 20px;">
         <compF v-if="view1Show" />
+        <CommonA v-if="view1Show" />
         <CompG v-if="view2Show" />
+        <CommonB v-if="view2Show" />
       </div>
     </div>
   </div>
@@ -13,7 +15,9 @@
 export default {
   components: {
     'compF': () => import("./components/compF"),
-    'CompG': () => import("./components/compG")
+    'CompG': () => import("./components/compG"),
+    'CommonA': () => import("@/components/CommonCompA"),
+    'CommonB': () => import("@/components/CommonCompB")
   },
 
   data() {

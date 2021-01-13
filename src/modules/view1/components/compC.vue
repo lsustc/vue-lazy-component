@@ -6,7 +6,7 @@
 
 <style scoped>
 .comp-c{
-    height: 500px;
+    height: 100px;
     width: 100%;
     background: blue;
 }

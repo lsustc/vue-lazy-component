@@ -1,8 +1,9 @@
 <template>
   <div style="height: 100%">
     <div class="index-d3 switch">
-      <div class="d3-more" style="display: block">
+      <div class="d3-more" style="display: block;padding-top: 20px;">
         <compH v-if="view1Show" />
+        <CommonB v-if="view1Show" />
         <CompI v-if="view2Show" />
       </div>
     </div>
@@ -13,7 +14,8 @@
 export default {
   components: {
     'compH': () => import("./components/compH"),
-    'CompI': () => import("./components/compI")
+    'CompI': () => import("./components/compI"),
+    'CommonB': () => import("@/components/CommonCompB")
   },
 
   data() {

@@ -1,10 +1,11 @@
 <template>
   <div style="height: 100%">
     <div class="index-d3 switch">
-      <div class="d3-more" style="display: block">
+      <div class="d3-more" style="display: block;padding-top: 20px;">
         <CompA v-if="view1Show" />
         <CompB v-if="view2Show" />
         <CompC v-if="view3Show" />
+        <CommonA v-if="view3Show" />
         <CompD v-if="view4Show" />
         <CompE v-if="view5Show" />
       </div>
@@ -19,7 +20,8 @@ export default {
     'CompB': () => import("./components/compB"),
     'CompC': () => import("./components/compC"),
     'CompD': () => import("./components/compD"),
-    'CompE': () => import("./components/compE")
+    'CompE': () => import("./components/compE"),
+    'CommonA': () => import("@/components/CommonCompA")
   },
 
   data() {
